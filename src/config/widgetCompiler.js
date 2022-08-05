@@ -66,13 +66,6 @@ class WidgetsCompilerPlugin {
               chunks: "async",
               reuseExistingChunk: true,
             },
-            customElements: {
-              name: "customElements",
-              priority: 2,
-              test: /[\\/]node_modules[\\/]@webcomponents[\\/]/,
-              chunks: "async",
-              enforce: true,
-            },
           },
         },
       },
