@@ -80,6 +80,7 @@ class WidgetsCompilerPlugin {
       output: {
         ...webpackConfig.output,
         publicPath: `${publicRuntimeConfig.PUBLIC_BASE_URL}/_next/`,
+        uniqueName: 'embeddable-widget',
         filename: 'static/widgets/[name]/index.js',
       },
       plugins: modifiedPlugins,
